@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Delivery - Restaurants</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#ff4d4d;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.search-box{
+    text-align:center;
+    margin:25px;
+}
+
+.search-box input{
+    width:60%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.details{
+    padding:15px;
+}
+
+.details h2{
+    margin-bottom:10px;
+}
+
+.details p{
+    color:gray;
+    margin-bottom:8px;
+}
+
+.rating{
+    color:green;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    border-radius:0 0 12px 12px;
+}
+
+button:hover{
+    background:#e63939;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    Food Delivery
+</header>
+
+<div class="search-box">
+    <input type="text" placeholder="Search Restaurants...">
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="">
+        <div class="details">
+            <h2>Pizza Hub</h2>
+            <p>Italian • Pizza</p>
+            <p class="rating">⭐ 4.6</p>
+            <p>Delivery: 30 mins</p>
+        </div>
+        <button>View Menu</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="">
+        <div class="details">
+            <h2>Burger Point</h2>
+            <p>Fast Food</p>
+            <p class="rating">⭐ 4.3</p>
+            <p>Delivery: 25 mins</p>
+        </div>
+        <button>View Menu</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="">
+        <div class="details">
+            <h2>South Spice</h2>
+            <p>South Indian</p>
+            <p class="rating">⭐ 4.7</p>
+            <p>Delivery: 35 mins</p>
+        </div>
+        <button>View Menu</button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600" alt="">
+        <div class="details">
+            <h2>BBQ Nation</h2>
+            <p>Barbecue</p>
+            <p class="rating">⭐ 4.5</p>
+            <p>Delivery: 40 mins</p>
+        </div>
+        <button>View Menu</button>
+    </div>
+
+</div>
+
+</body>
+</html>
